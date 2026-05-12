@@ -11,7 +11,7 @@ spring:
     redis:
       host: 127.0.0.1
       port: 6379
-      password: 123456
+      password: root
   cloud:
     nacos:
       discovery:
@@ -46,7 +46,7 @@ spring:
     allow-bean-definition-overriding: true
 
 rocketmq:
-  name-server: 127.0.0.1:9876
+  name-server: 172.27.128.1:9876
   producer:
     group: index12306_aggregation-service_common-message-execute_pg
     send-message-timeout: 2000
